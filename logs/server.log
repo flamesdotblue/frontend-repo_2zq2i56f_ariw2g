@@ -1,0 +1,38 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 263 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.0.173:3000/
+12:17:09 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/PomodoroTimer.jsx:22:72: ERROR: Unexpected "!"
+12:17:10 PM [vite] ✨ new dependencies optimized: lucide-react, @splinetool/react-spline
+12:17:10 PM [vite] ✨ optimized dependencies changed. reloading
+12:17:13 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/PomodoroTimer.jsx:22:72: ERROR: Unexpected "!"
+12:17:16 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/PomodoroTimer.jsx:22:72: ERROR: Unexpected "!"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/PomodoroTimer.jsx:22:72
+  
+  Unexpected "!"
+  20 |    const intervalRef = useRef(null);
+  21 |  
+  22 |    const activePreset = useMemo(() => PRESETS.find(p => p.key === active)!, [active]);
+     |                                                                          ^
+  23 |  
+  24 |    useEffect(() => {
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
